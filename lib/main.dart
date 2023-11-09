@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inpustforms/widgets/grocery_list.dart';
 
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Groceries',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
@@ -22,6 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: const Color.fromARGB(255, 50, 58, 60),
       ),
+      home: const GroceryList(),
     );
   }
 }
